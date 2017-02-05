@@ -4,9 +4,9 @@
 class HealthComponent : public Component
 {
 public :
-	HealthComponent() : health(100) {}
-	int getHealth() { return health; }
-	void setHealth(int health) { this->getHealth = health; }
+	HealthComponent():Component(ComponentType::HEALTH) , m_health(100){}
+	int getHealth() { return m_health; }
+	void setHealth(int health) { this->m_health = health; }
 private:
-	int health;
+	int m_health;
 };
