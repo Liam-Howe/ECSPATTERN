@@ -9,7 +9,7 @@ public:
 	void addEntity(Entity* e) { entities.push_back(e); }
 	void update()
 	{
-
+		std::cout << "Updating  Control system : : " << std::endl;
 		for (int i = 0; i < entities.size(); i++)
 		{
 			switch (entities[i]->getTYpe())
